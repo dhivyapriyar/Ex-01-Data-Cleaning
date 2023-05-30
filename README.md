@@ -20,23 +20,41 @@ Save the Clean data to the file
 
 # CODE
 import pandas as pd
+
 df=pd.read_csv("/content/Loan_data.csv")
+
 print(df)
+
 df.head(10)
+
 df.info()
+
 df.isnull()
+
 df.isnull().sum()
+
 df['Loan_ID']=df['Loan_ID'].fillna(df['Dependents'].mode()[0])
+
 df['Dependents']=df['Dependents'].fillna(df['Dependents'].mode()[0])
+
 df['Education']=df['Education'].fillna(df['Dependents'].mode()[0])
+
 df.head()
+
 df['ApplicantIncome']=df['ApplicantIncome'].fillna(df['ApplicantIncome'].mean())
+
 df['Loan_Amount_Term']=df['Loan_Amount_Term'].fillna(df['Loan_Amount_Term'].mean())
+
 df.head()
+
 df['Credit_History']=df['Credit_History'].fillna(df['Credit_History'].median())
+
 df.head()
+
 df.info()
+
 df.isnull().sum()
+
 # OUPUT
 ![1](https://github.com/dhivyapriyar/Ex-01-Data-Cleaning/assets/119477552/7dcdfc38-1369-4ff1-9c9d-e930573fcf4d)
 ![2](https://github.com/dhivyapriyar/Ex-01-Data-Cleaning/assets/119477552/5cb050c7-da6a-4a19-9d97-1f06e73a7962)
