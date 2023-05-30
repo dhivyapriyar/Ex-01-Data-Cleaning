@@ -63,3 +63,6 @@ df.isnull().sum()
 ![5](https://github.com/dhivyapriyar/Ex-01-Data-Cleaning/assets/119477552/47984aea-9678-4c6c-8e13-99e160476d0b)
 ![6](https://github.com/dhivyapriyar/Ex-01-Data-Cleaning/assets/119477552/d6ff1ff1-4538-416d-b0e0-c117593825f6)
 ![7](https://github.com/dhivyapriyar/Ex-01-Data-Cleaning/assets/119477552/8fd07b17-6fb7-417e-b504-b43c70ab83fb)
+
+# RESULT
+Thus, the given data is read, cleansed and the cleansed data is saved into the file.
